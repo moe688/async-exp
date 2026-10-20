@@ -1,6 +1,7 @@
 const makeCoffee = (type: string) => {
 	return new Promise<string>((resolve, reject) => {
 		setTimeout(() => {
+			console.log("machine strted");
 			if (type === "Tea") {
 				reject(new Error("The machine only makes coffee"));
 			} else {
